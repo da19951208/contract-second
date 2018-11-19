@@ -24,7 +24,7 @@
             window.scrollTo(0, 1);
         } </script>
     <!-- //for-mobile-apps -->
-    <link href="${pageContext.request.contextPath}/static/css/style.css" rel="stylesheet" type="text/css" media="all"/>
+    <link href="${pageContext.request.contextPath}/static/css/login.css" rel="stylesheet" type="text/css" media="all"/>
     <link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,400italic,700,700italic' rel='stylesheet'
           type='text/css'>
 

@@ -184,8 +184,8 @@
                                                     <td>${compact.unbilledAmount}</td>
                                                     <td>${compact.receivableTotal}</td>
                                                     <td>
-                                                        <a href="${pageContext.request.contextPath}/compact/delete?id=${compact.id}"
-                                                           onclick="return confirmx('要删除该合同信息吗？', this.href)">删除</a>
+                                                        <button type="button"><a href="${pageContext.request.contextPath}/compact/delete?id=${compact.id}"
+                                                           onclick="return confirmx('要删除该合同信息吗？', this.href)">删除</a></button>
                                                     </td>
                                                 </tr>
                                             </c:forEach>
