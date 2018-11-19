@@ -64,7 +64,7 @@
     <!-- search form -->
     <div class="search">
         <form name="search" method="get" action="#" />
-        <input type="text" name="search" value="Search .../功能暂空" />
+        <input type="text" name="search" value="Search .../Function for empty" />
         <input class="with-tooltip" title="Search!" type="submit" name="submit" value="" />
         </form>
     </div>
