@@ -2,6 +2,7 @@ package com.ff.serivce;
 
 import com.ff.dao.UserMapper;
 import com.ff.model.User;
+import com.ff.util.Md5Utils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -18,7 +19,8 @@ public class UserService {
      */
     public User checkLogin(String username, String password) {
         User user = userMapper.findByUsername(username);
-        if (user != null && user.getPassword().equals(password)) {
+        String userpassword = Md5Utils.pwdDigest(password);
+        if (user != null && user.getPassword().equals(userpassword)) {
             return user;
         }
         return null;
