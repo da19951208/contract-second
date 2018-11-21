@@ -40,10 +40,11 @@
         </div>
         <div class="main-info1">
             <h3>Sign In</h3>
-            <form action="${pageContext.request.contextPath}/user/checkLogin" method="post">
+            <%--<form action="${pageContext.request.contextPath}/user/loginn" method="post">--%>
+                <form action="${pageContext.request.contextPath}/user/loginSys">
                 <input type="text" name="username" placeholder="Username" required=" ">
                 <input type="password" name="password" placeholder="Password" required=" ">
-                <input type="submit" value="Login">
+                <input id="loginBtn" type="submit" value="Login">
 
                 <%--<div class="ckeck-bg">--%>
                     <%--<div class="checkbox-form">--%>
@@ -76,5 +77,6 @@
 </div>
 <!-- //main -->
 <script type="text/javascript" src="${pageContext.request.contextPath}/static/js/jquery.min.js"></script>
+<%--<script type="text/javascript" src="${pageContext.request.contextPath}/static/js/login.js" ></script>--%>
 </body>
 </html>

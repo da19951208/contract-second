@@ -8,4 +8,11 @@
 		from user
 		where username = #{username}
 	</select>
+
+	<!--通过username获取user对象-->
+	<select id="querySingleUser" parameterType="String" resultType="com.ff.model.User">
+        SELECT *
+        from user
+        where username = #{username}
+    </select>
 </mapper>

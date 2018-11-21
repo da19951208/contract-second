@@ -11,4 +11,8 @@ public interface UserMapper {
      * @return
      */
     User findByUsername(String username);
+
+    User loadUserByUsername(String username);
+
+    User querySingleUser(String username);
 }

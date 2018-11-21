@@ -5,8 +5,8 @@ import org.slf4j.LoggerFactory;
 
 import java.security.MessageDigest;
 
-public class Md5Utils {
-    private static Logger logger = LoggerFactory.getLogger(Md5Utils.class);
+public class MD5Util {
+    private static Logger logger = LoggerFactory.getLogger(MD5Util.class);
 
     public static final String PSWORD_SALT = "jinhui";
 
@@ -35,7 +35,7 @@ public class Md5Utils {
             }
             return new String(str);
         } catch (Exception e) {
-            logger.error("{}.digest方法发生异常,异常原因{}", Md5Utils.class.getCanonicalName(),e.getMessage());
+            logger.error("{}.digest方法发生异常,异常原因{}", MD5Util.class.getCanonicalName(),e.getMessage());
             return null;
         }
     }

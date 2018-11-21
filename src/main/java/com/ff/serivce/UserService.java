@@ -23,4 +23,12 @@ public class UserService {
         }
         return null;
     }
+
+    public User loadUserByUsername(String username) {
+        return userMapper.loadUserByUsername(username);
+    }
+
+    public User querySingleUser(String username) {
+        return userMapper.querySingleUser(username);
+    }
 }

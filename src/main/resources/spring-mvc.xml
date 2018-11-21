@@ -35,13 +35,13 @@
     <!-- 在实际开发中通常都需配置 mvc:annotation-driven标签,这个标签是开启注解 -->
     <mvc:annotation-driven></mvc:annotation-driven>
      <!--拦截器-->
-    <mvc:interceptors>
-        <!-- 多个拦截器，顺序执行 -->
-        <mvc:interceptor>
-            <mvc:mapping path="/**"/>
-            <bean class="com.ff.util.LoginInterceptor"></bean>
-        </mvc:interceptor>
-    </mvc:interceptors>
+    <!--<mvc:interceptors>-->
+        <!--&lt;!&ndash; 多个拦截器，顺序执行 &ndash;&gt;-->
+        <!--<mvc:interceptor>-->
+            <!--<mvc:mapping path="/**"/>-->
+            <!--<bean class="com.ff.util.LoginInterceptor"></bean>-->
+        <!--</mvc:interceptor>-->
+    <!--</mvc:interceptors>-->
 
 
     <!--避免IE执行AJAX时，返回JSON出现下载文件 -->
